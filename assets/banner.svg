@@ -1,50 +1,21 @@
-<svg width="1200" height="300" viewBox="0 0 1200 300" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hi, I'm Oliver — I build personal tools and automations">
+<svg width="1200" height="300" viewBox="0 0 1200 300" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hi, I'm Oliver. I build personal tools, dashboards and automations.">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="300" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#0d1117"/>
-      <stop offset="1" stop-color="#161b2e"/>
+    <linearGradient id="shine" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0a84ff"/>
+      <stop offset="0.35" stop-color="#bf5af2"/>
+      <stop offset="0.7" stop-color="#ff375f"/>
+      <stop offset="1" stop-color="#ff9f0a"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-300 0; 300 0; -300 0" dur="14s" repeatCount="indefinite"/>
     </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#58a6ff"/>
-      <stop offset="0.5" stop-color="#bc8cff"/>
-      <stop offset="1" stop-color="#39d3bb"/>
-      <animateTransform attributeName="gradientTransform" type="translate" values="-600 0; 600 0; -600 0" dur="8s" repeatCount="indefinite"/>
-    </linearGradient>
-    <radialGradient id="glow1" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#58a6ff" stop-opacity="0.25"/>
-      <stop offset="1" stop-color="#58a6ff" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="glow2" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#bc8cff" stop-opacity="0.22"/>
-      <stop offset="1" stop-color="#bc8cff" stop-opacity="0"/>
+    <radialGradient id="haze" cx="0.5" cy="1.1" r="0.9">
+      <stop offset="0" stop-color="#1d1d1f"/>
+      <stop offset="1" stop-color="#000000"/>
     </radialGradient>
   </defs>
 
-  <rect width="1200" height="300" fill="url(#bg)"/>
+  <rect width="1200" height="300" fill="url(#haze)"/>
 
-  <circle cx="180" cy="70" r="220" fill="url(#glow1)">
-    <animate attributeName="cx" values="180;260;180" dur="10s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="1020" cy="240" r="260" fill="url(#glow2)">
-    <animate attributeName="cy" values="240;170;240" dur="12s" repeatCount="indefinite"/>
-  </circle>
+  <text x="600" y="152" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="64" font-weight="700" letter-spacing="-1.5" fill="#f5f5f7">Hi, I'm Oliver<tspan fill="url(#shine)">.</tspan></text>
 
-  <g fill="#8b949e" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, monospace" font-size="15" opacity="0.5">
-    <text x="70" y="60">const developer = {</text>
-    <text x="90" y="86">name: "Oliver",</text>
-    <text x="90" y="112">stack: ["TypeScript", "Node.js"],</text>
-    <text x="90" y="138">builds: "tools &amp; automations"</text>
-    <text x="70" y="164">};</text>
-  </g>
-
-  <text x="600" y="150" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="58" font-weight="800" fill="#e6edf3">Hi, I'm Oliver <tspan fill="url(#accent)">👋</tspan></text>
-  <text x="600" y="200" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="22" font-weight="500" fill="url(#accent)">Building personal tools, dashboards &amp; automations</text>
-
-  <rect x="450" y="232" width="300" height="3" rx="1.5" fill="url(#accent)" opacity="0.9"/>
-
-  <g fill="#8b949e" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, monospace" font-size="15" opacity="0.5">
-    <text x="950" y="230">while (alive) {</text>
-    <text x="970" y="256">code();</text>
-    <text x="950" y="282">}</text>
-  </g>
+  <text x="600" y="204" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="24" font-weight="400" letter-spacing="-0.2" fill="#86868b">Personal tools, dashboards &amp; automations. <tspan fill="url(#shine)" font-weight="500">Thoughtfully built.</tspan></text>
 </svg>
